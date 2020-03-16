@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loading1"
+    tools:context=".MenuAdminActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Admin"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/layoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginHorizontal="100dp">
+
+            <Button
+                android:id="@+id/eventButton"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:onClick="eventPage"
+                android:background="#413e4f"
+                android:text="Event"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/viewUser"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eventButton"
+                android:layout_alignLeft="@+id/rentButton"
+                android:layout_marginTop="50dp"
+                android:background="#413e4f"
+                android:layout_centerHorizontal="true"
+                android:onClick="viewPage"
+                android:text="View User Data"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/viewBooking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewUser"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#413e4f"
+                android:onClick="managePage"
+                android:text="Manage Customer Booking"
+                android:textColor="@android:color/white" />
+            <!--<Button
+                android:id="@+id/viewNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewBooking"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="#413e4f"
+                android:onClick="notifyPage"
+                android:text="Notification"
+                android:textColor="@android:color/white" />-->
+
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>

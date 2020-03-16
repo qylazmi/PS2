@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rentbackground">
+
+        <RelativeLayout
+            android:layout_width="345dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="76dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="RENT FORM"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/edit_Name"
+            android:layout_marginLeft="10dp"
+            android:text="Name "
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_Name"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/nameText"/>
+
+        <TextView
+            android:id="@+id/icText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/edit_Ic"
+            android:layout_below="@+id/nameText"
+            android:layout_marginLeft="10dp"
+            android:text="IC No "
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_Ic"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@+id/edit_Name"
+            android:layout_below="@+id/edit_Name"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/icText" />
+
+        <TextView
+            android:id="@+id/telNoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/edit_Tel"
+            android:layout_below="@+id/icText"
+            android:layout_marginLeft="10dp"
+            android:text="Tel No "
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_Tel"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@+id/edit_Name"
+            android:layout_below="@+id/edit_Ic"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/telNoText" />
+
+            <TextView
+                android:id="@+id/hallTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edit_Tel"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="CHOOSE HALL"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:id="@+id/linearlayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hallTypeText">
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="600dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radioAllHall"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageButton1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ghazali" />
+
+                    <ImageView
+                        android:id="@+id/imageButton2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/jamu" />
+
+                    <ImageView
+                        android:id="@+id/imageButton3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/khawarizmi" />
+                </TableRow>
+            </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/layoutDescriptionImage"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/linearlayout2">
+            <TextView
+                android:id="@+id/textimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="DEWAN\nAL-GHAZALI"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/textimage1"
+                android:text="Muat 180 \npeserta"
+                android:textSize="12dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/textimage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:text="DEWAN\nJAMUAN"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textimage2"
+                android:text="Muat 130"
+                android:textSize="12dp"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:id="@+id/textimage3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:textStyle="bold"
+                android:text="DEWAN\nAL-\nKHAWARIZMI"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textimage3"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/textimage3"
+                android:textSize="12dp"
+                android:text="Muat 170 peserta"
+                android:textColor="@android:color/black"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/chooseHall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Type your choice of hall below"
+            android:layout_below="@+id/layoutDescriptionImage"
+            android:textColor="#808080"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_Hall"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/chooseHall"/>
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_Hall"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Date "
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_Date"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@+id/edit_Name"
+            android:layout_alignTop="@+id/dateText"
+            android:textAlignment="center"
+            android:layout_toRightOf="@+id/dateText" />
+
+        <TextView
+            android:id="@+id/purposeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_Purpose"
+            android:layout_below="@id/dateText"
+            android:layout_marginLeft="10dp"
+            android:text="Purpose "
+            android:textColor="#808080"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edit_Purpose"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="#EEEEEE"
+            android:layout_alignLeft="@+id/edit_Name"
+            android:layout_below="@id/edit_Date"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/purposeText" />
+
+        <Button
+            android:id="@+id/buttonSubmitRent"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/edit_Purpose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#413e4f"
+
+            android:text="Submit"
+            android:textColor="#FFFFFF"/>
+
+        </RelativeLayout>
+        </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

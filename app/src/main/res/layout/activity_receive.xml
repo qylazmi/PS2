@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/successful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUCCESSFULL!"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="26dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/receiveName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/successful"/>
+            <TextView
+                android:id="@+id/nameBook"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/receiveName"
+                android:layout_alignLeft="@+id/telBook"
+                android:layout_alignTop="@+id/receiveName"
+                android:layout_below="@+id/successful"/>
+    <TextView
+        android:id="@+id/receiveIc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/receiveName"/>
+        <TextView
+            android:id="@+id/icBook"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/nameBook"
+            android:layout_alignLeft="@+id/telBook"
+            android:layout_alignTop="@+id/receiveIc"/>
+    <TextView
+        android:id="@+id/receiveTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Mobile Phone"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/receiveIc"/>
+            <TextView
+                android:id="@+id/telBook"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/icBook"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/receiveTel"
+                android:layout_alignTop="@+id/receiveTel"/>
+    <TextView
+        android:id="@+id/receiveHall"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="Type Hall"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/receiveTel"/>
+            <TextView
+                android:id="@+id/hallBook"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/telBook"
+                android:layout_below="@+id/telBook"
+                android:layout_alignTop="@+id/receiveHall"/>
+    <TextView
+        android:id="@+id/receiveDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Date"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/receiveHall"/>
+            <TextView
+                android:id="@+id/dateBook"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/hallBook"
+                android:layout_alignLeft="@+id/telBook"
+                android:layout_alignTop="@+id/receiveDate"/>
+    <TextView
+        android:id="@+id/receivePurpose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Purpose"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/receiveDate"/>
+            <TextView
+                android:id="@+id/purposeBook"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignLeft="@+id/telBook"
+                android:layout_below="@+id/dateBook"
+                android:layout_alignTop="@+id/receivePurpose"/>
+
+        <Button
+                android:id="@+id/notification"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/purposeBook"
+                android:background="#413e4f"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textColor="@android:color/white"
+                android:onClick="backToMenu"
+                android:text="OKAY" />
+
+
+</RelativeLayout>
+</ScrollView>

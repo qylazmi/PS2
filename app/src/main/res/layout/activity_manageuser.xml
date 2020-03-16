@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageUser">
+    <RelativeLayout
+        android:id="@+id/layoutTextManage"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FFC300">
+
+        <TextView
+            android:id="@+id/textManage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage Booking Request"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+<ScrollView
+    android:id="@+id/scrollmanage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/layoutTextManage">
+
+    <RelativeLayout
+        android:id="@+id/layoutManage"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#F4F2F0">
+
+        <RelativeLayout
+            android:id="@+id/layoutView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            >
+            <Button
+                android:id="@+id/button_View"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="View book"
+                android:layout_marginLeft="30dp"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button_Update"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:text="Update book"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/button_Delete"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="Delete book"
+                android:textSize="22sp" />
+        </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/editAdmin_id"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/layoutView"
+        android:background="#FFFF"
+        android:layout_centerHorizontal="true"
+        android:hint ="   ID"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/ic_vpn_key_black_24dp"
+            android:layout_below="@+id/layoutView"
+            android:layout_toRightOf="@id/editAdmin_id"/>
+
+    <EditText
+        android:id="@+id/editAdmin_name"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:background="#FFFF"
+        android:layout_below="@+id/editAdmin_id"
+        android:layout_centerHorizontal="true"
+        android:hint="   Name" />
+
+    <EditText
+        android:id="@+id/editAdmin_ic"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:layout_below="@id/editAdmin_name"
+        android:background="#FFFF"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="   IC" />
+
+    <EditText
+        android:id="@+id/editAdmin_tel"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editAdmin_ic"
+        android:background="#FFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="   Mobile Phone" />
+
+    <EditText
+        android:id="@+id/editAdmin_hall"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editAdmin_tel"
+        android:background="#FFFF"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="   Change Hall"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editAdmin_date"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editAdmin_hall"
+        android:textAlignment="center"
+        android:background="#FFFF"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="   Date" />
+
+    <EditText
+        android:id="@+id/editAdmin_purpose"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/editAdmin_date"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:background="#FFFF"
+        android:layout_centerHorizontal="true"
+        android:hint="   Purpose"/>
+
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
+</RelativeLayout>
